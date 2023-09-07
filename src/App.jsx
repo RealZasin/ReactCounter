@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Form} from "./komponenter/Form"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Form />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+// Oppgave:
+// Denne består av å lage et sett med enkle komponenter som benytter seg av en eller
+//annen form for tilstand.
+//Dette er det grunnleggendes når det kommer til komponent tilstander.
+
+// Krav:
+// En Counter komponent, som kan øke en verdi og tilbakestille den.
+// En Form komponent som kaller en funksjon med inneholdet
+//(start med å logge til konsollen)
+
+// Stretch Goals:
+// En Karusel komponent for bilder eller prosjekter, kombiner den med children properties
+// for ekstra creds.
+// Lagre bruker info i App komponenten og sett den via Form komponenten du lagde.
