@@ -1,27 +1,45 @@
+import React, { useState } from "react";
+
 export function Form() {
-    function consoleLog() {
-        console.log()
-    }
-    return (
-      <>
+  // Define state variables to store the username and password
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  // Handler to be called when the form is submitted
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form behavior (page reload)
+    console.log("Username:", username);
+    console.log("Password:", password);
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
         <div>
-          <form>
-                <h3>Brukernavn:</h3>
-                <input type="text" />
-                <br></br>
-                <h3>Passord:</h3>
-                <input type="password" />
-            <br></br>
-            <br></br>
-                <button onClick="consoleLog()">Submit</button>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-          </form>
+            <h3>Logg Inn</h3>
+          <label>
+            Username:
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <br></br>
         </div>
-      </>
-    );
+        <div>
+          <label>
+            Password:
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
 }
