@@ -1,10 +1,12 @@
-import {Form} from "./komponenter/Form"
+import { Form } from "./komponenter/Form";
+import { Teller } from "./komponenter/Teller";
 
 export function App() {
   return (
     <>
       <div>
         <Form />
+        <Teller />
       </div>
     </>
   );

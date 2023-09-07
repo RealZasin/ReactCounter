@@ -1,7 +1,7 @@
-import { useState } from "react";
-import "./Teller.css";
+  import { useState } from "react";
+  import "./Teller.css";
 
-export function Teller() {
+ export function Teller() {
   const [count, setCount] = useState(0);
 
   return (
@@ -22,3 +22,4 @@ export function Teller() {
     </>
   );
 }
+
