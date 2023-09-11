@@ -1,5 +1,6 @@
 import { Form } from "./komponenter/Form";
 import { Teller } from "./komponenter/Teller";
+import "./App.css";
 
 export function App() {
   return (

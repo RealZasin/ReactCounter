@@ -1,5 +1,5 @@
   import { useState } from "react";
-  import "./Teller.css";
+  
 
  export function Teller() {
   const [count, setCount] = useState(0);
@@ -14,7 +14,7 @@
         </button>
         <br></br>
         <br></br>
-        <button onClick={() => setCount((count) => (count = 0))}>
+        <button onClick={() => setCount(0)}>
           Klikk på meg for å starte på nytt
         </button>
       </div>

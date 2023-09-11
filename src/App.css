@@ -11,12 +11,6 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
 @keyframes logo-spin {
   from {
@@ -42,6 +36,38 @@
 }
 
 .Teller {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-size: 5rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 5rem;
+}
+
+Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.Username {
+  margin: 0.5rem 1rem;
+  min-width: 10rem;
+}
+
+.Password {
+  margin: 0.5rem 1rem;
+  min-width: 10rem;
+}
+
+.SubmitBtn {
+  width: 8rem;
+  margin-top: 1rem;
+}
+
+.fixit {
+}
+
+.fixitChild {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: centerg;
 }
